@@ -21,9 +21,9 @@ export function ForgottenPassword() {
           });
         } catch (err) {
           console.error(err);
-          actions.setStatus({ error: err.response.data });
+          actions.setStatus({ error: err.message });
+          actions.setSubmitting(false);
         }
-        actions.setSubmitting(false);
       }}
     >
       {formikBag => {
