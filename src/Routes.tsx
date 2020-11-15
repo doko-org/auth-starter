@@ -15,33 +15,33 @@ export function Routes() {
   return (
     <div className="app">
       {user ? (
-          <Switch>
-            <Route path="/">
-              <Home />
-            </Route>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
 
-            <Redirect to="/" />
-          </Switch>
+          <Redirect to="/" />
+        </Switch>
       ) : (
-          <Switch>
-            <Route path="/sign-in">
-              <SignIn />
-            </Route>
+        <Switch>
+          <Route path="/sign-in">
+            <SignIn />
+          </Route>
 
-            <Route path="/sign-up">
-              <SignUp />
-            </Route>
+          <Route path="/sign-up">
+            <SignUp />
+          </Route>
 
-            <Route path="/forgotten-password">
-              <ForgottenPassword />
-            </Route>
+          <Route path="/forgotten-password">
+            <ForgottenPassword />
+          </Route>
 
-            <Route path="/reset-password">
-              <ResetPassword />
-            </Route>
+          <Route path="/reset-password">
+            <ResetPassword />
+          </Route>
 
-            <Redirect to="/sign-in" />
-          </Switch>
+          <Redirect to="/sign-in" />
+        </Switch>
       )}
     </div>
   );

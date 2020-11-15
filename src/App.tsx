@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes } from './Routes';
 import { DokoProvider } from 'doko';
 
+// TODO add your doko id
 const DOKO_APP_ID = '';
 
 function App() {
