@@ -28,7 +28,7 @@ export function SignUp() {
       }}
     >
       {formikBag => {
-        const { handleSubmit, isSubmitting, status, errors } = formikBag;
+        const { handleSubmit, isSubmitting, status } = formikBag;
 
         return (
           <Form onSubmit={handleSubmit}>
