@@ -9,7 +9,6 @@ const Nav = styled('nav')`
   bottom: 15px;
   right: 15px;
   z-index: 99;
-  display: none;
 `;
 
 export const Home: React.FC = () => {

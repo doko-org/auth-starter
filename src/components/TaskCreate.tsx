@@ -7,7 +7,6 @@ import { Task } from '../types';
 const Wrapper = styled('label')`
   background: #1d1d1d;
   border-radius: 4px;
-  margin-top: 15px;
   margin-bottom: 15px;
   position: relative;
   height: 50px;

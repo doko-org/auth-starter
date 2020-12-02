@@ -5,6 +5,7 @@ import { useSpring, animated } from 'react-spring';
 const Wrapper = styled('div')`
   position: relative;
   text-align: center;
+  margin-top: 20px;
 `;
 
 const Completed = styled('span')`
