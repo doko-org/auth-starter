@@ -1,13 +1,12 @@
 import React from 'react';
-import { useUser, signout } from 'doko';
+import { useUser } from 'doko';
 
 export const Home: React.FC = () => {
-  const user = useUser();
+  const { user } = useUser();
 
   return (
     <div>
-      <h2>Welcome {user.email}</h2>
-      <button onClick={signout}>Signout</button>
+      <h2>Welcome {user?.email}</h2>
     </div>
   );
 };
